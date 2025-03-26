@@ -1,15 +1,19 @@
 
-       
-        function trocarLampada() {
-          
-            var lampada = document.getElementById('lampada');
+const ligar = document.getElementById('ligar');
+const desligar = document.getElementById('desligar');
+const lampada = document.getElementById('lampada'); // primeiro chamei ela pro javascript  usando const  e document.elementbyid 
 
-            // Verifica o estado da lâmpada e troca a imagem
-            if (lampada.src.includes("https://acquafort.vtexassets.com/arquivos/ids/163557/_DSC0023.png?v=637574588026000000")) {
-                lampada.src = "lampada_ligada.jpg";  // Troca para a lâmpada ligada
-                     // Atualiza o texto alternativo
-            } else {
-                lampada.src = "https://acquafort.vtexassets.com/arquivos/ids/163557/_DSC0023.png?v=637574588026000000";  // Troca para a lâmpada desligada
-                   // Atualiza o texto alternativo
-            }
-        }
+function LigarLampada(){
+ lampada.src="lampada/lampada-acesa.png"; // criei uma funcao para ligar a lampada e botei a foto ali dentro e criei uma outra funçao para desligar 
+}
+function DesligarLampada(){
+ lampada.src="lampada/lampada-apagada.png";
+}
+ligar.addEventListener("click", LigarLampada) // esse ligar é o botao ali em cima da const, quando eu chamo ele "ligar" eu adicinei um evento para o click ligar  a lampada
+desligar.addEventListener("click", DesligarLampada);
+
+
+
+
+ // resumidamente: quando eu clicar no botao ele vai ligar a lampada pois criei uma funcao ligar lampada com ela acesa e depois criei um evento com  um click para ligar  e chamei ela "LigarLampada"
+
