@@ -1,4 +1,3 @@
-
 const ligar = document.getElementById('ligar');
 const desligar = document.getElementById('desligar');
 const lampada = document.getElementById('lampada'); // primeiro chamei ela pro javascript  usando const  e document.elementbyid 
@@ -16,4 +15,5 @@ desligar.addEventListener("click", DesligarLampada);
 
 
  // resumidamente: quando eu clicar no botao ele vai ligar a lampada pois criei uma funcao ligar lampada com ela acesa e depois criei um evento com  um click para ligar  e chamei ela "LigarLampada"
+
 
